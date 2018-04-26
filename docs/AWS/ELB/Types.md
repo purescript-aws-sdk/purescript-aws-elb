@@ -10,7 +10,7 @@ options :: Options
 
 ``` purescript
 newtype AccessLog
-  = AccessLog { "Enabled" :: AccessLogEnabled, "S3BucketName" :: NullOrUndefined (S3BucketName), "EmitInterval" :: NullOrUndefined (AccessLogInterval), "S3BucketPrefix" :: NullOrUndefined (AccessLogPrefix) }
+  = AccessLog { "Enabled" :: AccessLogEnabled, "S3BucketName" :: Maybe (S3BucketName), "EmitInterval" :: Maybe (AccessLogInterval), "S3BucketPrefix" :: Maybe (AccessLogPrefix) }
 ```
 
 <p>Information about the <code>AccessLog</code> attribute.</p>
@@ -35,7 +35,7 @@ Constructs AccessLog from required parameters
 #### `newAccessLog'`
 
 ``` purescript
-newAccessLog' :: AccessLogEnabled -> ({ "Enabled" :: AccessLogEnabled, "S3BucketName" :: NullOrUndefined (S3BucketName), "EmitInterval" :: NullOrUndefined (AccessLogInterval), "S3BucketPrefix" :: NullOrUndefined (AccessLogPrefix) } -> { "Enabled" :: AccessLogEnabled, "S3BucketName" :: NullOrUndefined (S3BucketName), "EmitInterval" :: NullOrUndefined (AccessLogInterval), "S3BucketPrefix" :: NullOrUndefined (AccessLogPrefix) }) -> AccessLog
+newAccessLog' :: AccessLogEnabled -> ({ "Enabled" :: AccessLogEnabled, "S3BucketName" :: Maybe (S3BucketName), "EmitInterval" :: Maybe (AccessLogInterval), "S3BucketPrefix" :: Maybe (AccessLogPrefix) } -> { "Enabled" :: AccessLogEnabled, "S3BucketName" :: Maybe (S3BucketName), "EmitInterval" :: Maybe (AccessLogInterval), "S3BucketPrefix" :: Maybe (AccessLogPrefix) }) -> AccessLog
 ```
 
 Constructs AccessLog's fields from required parameters
@@ -176,7 +176,7 @@ Constructs AddAvailabilityZonesInput's fields from required parameters
 
 ``` purescript
 newtype AddAvailabilityZonesOutput
-  = AddAvailabilityZonesOutput { "AvailabilityZones" :: NullOrUndefined (AvailabilityZones) }
+  = AddAvailabilityZonesOutput { "AvailabilityZones" :: Maybe (AvailabilityZones) }
 ```
 
 <p>Contains the output of EnableAvailabilityZonesForLoadBalancer.</p>
@@ -201,7 +201,7 @@ Constructs AddAvailabilityZonesOutput from required parameters
 #### `newAddAvailabilityZonesOutput'`
 
 ``` purescript
-newAddAvailabilityZonesOutput' :: ({ "AvailabilityZones" :: NullOrUndefined (AvailabilityZones) } -> { "AvailabilityZones" :: NullOrUndefined (AvailabilityZones) }) -> AddAvailabilityZonesOutput
+newAddAvailabilityZonesOutput' :: ({ "AvailabilityZones" :: Maybe (AvailabilityZones) } -> { "AvailabilityZones" :: Maybe (AvailabilityZones) }) -> AddAvailabilityZonesOutput
 ```
 
 Constructs AddAvailabilityZonesOutput's fields from required parameters
@@ -262,7 +262,7 @@ Encode AddTagsOutput
 
 ``` purescript
 newtype AdditionalAttribute
-  = AdditionalAttribute { "Key" :: NullOrUndefined (AdditionalAttributeKey), "Value" :: NullOrUndefined (AdditionalAttributeValue) }
+  = AdditionalAttribute { "Key" :: Maybe (AdditionalAttributeKey), "Value" :: Maybe (AdditionalAttributeValue) }
 ```
 
 <p>This data type is reserved.</p>
@@ -287,7 +287,7 @@ Constructs AdditionalAttribute from required parameters
 #### `newAdditionalAttribute'`
 
 ``` purescript
-newAdditionalAttribute' :: ({ "Key" :: NullOrUndefined (AdditionalAttributeKey), "Value" :: NullOrUndefined (AdditionalAttributeValue) } -> { "Key" :: NullOrUndefined (AdditionalAttributeKey), "Value" :: NullOrUndefined (AdditionalAttributeValue) }) -> AdditionalAttribute
+newAdditionalAttribute' :: ({ "Key" :: Maybe (AdditionalAttributeKey), "Value" :: Maybe (AdditionalAttributeValue) } -> { "Key" :: Maybe (AdditionalAttributeKey), "Value" :: Maybe (AdditionalAttributeValue) }) -> AdditionalAttribute
 ```
 
 Constructs AdditionalAttribute's fields from required parameters
@@ -360,7 +360,7 @@ Encode AppCookieStickinessPolicies
 
 ``` purescript
 newtype AppCookieStickinessPolicy
-  = AppCookieStickinessPolicy { "PolicyName" :: NullOrUndefined (PolicyName), "CookieName" :: NullOrUndefined (CookieName) }
+  = AppCookieStickinessPolicy { "PolicyName" :: Maybe (PolicyName), "CookieName" :: Maybe (CookieName) }
 ```
 
 <p>Information about a policy for application-controlled session stickiness.</p>
@@ -385,7 +385,7 @@ Constructs AppCookieStickinessPolicy from required parameters
 #### `newAppCookieStickinessPolicy'`
 
 ``` purescript
-newAppCookieStickinessPolicy' :: ({ "PolicyName" :: NullOrUndefined (PolicyName), "CookieName" :: NullOrUndefined (CookieName) } -> { "PolicyName" :: NullOrUndefined (PolicyName), "CookieName" :: NullOrUndefined (CookieName) }) -> AppCookieStickinessPolicy
+newAppCookieStickinessPolicy' :: ({ "PolicyName" :: Maybe (PolicyName), "CookieName" :: Maybe (CookieName) } -> { "PolicyName" :: Maybe (PolicyName), "CookieName" :: Maybe (CookieName) }) -> AppCookieStickinessPolicy
 ```
 
 Constructs AppCookieStickinessPolicy's fields from required parameters
@@ -428,7 +428,7 @@ Constructs ApplySecurityGroupsToLoadBalancerInput's fields from required paramet
 
 ``` purescript
 newtype ApplySecurityGroupsToLoadBalancerOutput
-  = ApplySecurityGroupsToLoadBalancerOutput { "SecurityGroups" :: NullOrUndefined (SecurityGroups) }
+  = ApplySecurityGroupsToLoadBalancerOutput { "SecurityGroups" :: Maybe (SecurityGroups) }
 ```
 
 <p>Contains the output of ApplySecurityGroupsToLoadBalancer.</p>
@@ -453,7 +453,7 @@ Constructs ApplySecurityGroupsToLoadBalancerOutput from required parameters
 #### `newApplySecurityGroupsToLoadBalancerOutput'`
 
 ``` purescript
-newApplySecurityGroupsToLoadBalancerOutput' :: ({ "SecurityGroups" :: NullOrUndefined (SecurityGroups) } -> { "SecurityGroups" :: NullOrUndefined (SecurityGroups) }) -> ApplySecurityGroupsToLoadBalancerOutput
+newApplySecurityGroupsToLoadBalancerOutput' :: ({ "SecurityGroups" :: Maybe (SecurityGroups) } -> { "SecurityGroups" :: Maybe (SecurityGroups) }) -> ApplySecurityGroupsToLoadBalancerOutput
 ```
 
 Constructs ApplySecurityGroupsToLoadBalancerOutput's fields from required parameters
@@ -496,7 +496,7 @@ Constructs AttachLoadBalancerToSubnetsInput's fields from required parameters
 
 ``` purescript
 newtype AttachLoadBalancerToSubnetsOutput
-  = AttachLoadBalancerToSubnetsOutput { "Subnets" :: NullOrUndefined (Subnets) }
+  = AttachLoadBalancerToSubnetsOutput { "Subnets" :: Maybe (Subnets) }
 ```
 
 <p>Contains the output of AttachLoadBalancerToSubnets.</p>
@@ -521,7 +521,7 @@ Constructs AttachLoadBalancerToSubnetsOutput from required parameters
 #### `newAttachLoadBalancerToSubnetsOutput'`
 
 ``` purescript
-newAttachLoadBalancerToSubnetsOutput' :: ({ "Subnets" :: NullOrUndefined (Subnets) } -> { "Subnets" :: NullOrUndefined (Subnets) }) -> AttachLoadBalancerToSubnetsOutput
+newAttachLoadBalancerToSubnetsOutput' :: ({ "Subnets" :: Maybe (Subnets) } -> { "Subnets" :: Maybe (Subnets) }) -> AttachLoadBalancerToSubnetsOutput
 ```
 
 Constructs AttachLoadBalancerToSubnetsOutput's fields from required parameters
@@ -610,7 +610,7 @@ Encode AvailabilityZones
 
 ``` purescript
 newtype BackendServerDescription
-  = BackendServerDescription { "InstancePort" :: NullOrUndefined (InstancePort), "PolicyNames" :: NullOrUndefined (PolicyNames) }
+  = BackendServerDescription { "InstancePort" :: Maybe (InstancePort), "PolicyNames" :: Maybe (PolicyNames) }
 ```
 
 <p>Information about the configuration of an EC2 instance.</p>
@@ -635,7 +635,7 @@ Constructs BackendServerDescription from required parameters
 #### `newBackendServerDescription'`
 
 ``` purescript
-newBackendServerDescription' :: ({ "InstancePort" :: NullOrUndefined (InstancePort), "PolicyNames" :: NullOrUndefined (PolicyNames) } -> { "InstancePort" :: NullOrUndefined (InstancePort), "PolicyNames" :: NullOrUndefined (PolicyNames) }) -> BackendServerDescription
+newBackendServerDescription' :: ({ "InstancePort" :: Maybe (InstancePort), "PolicyNames" :: Maybe (PolicyNames) } -> { "InstancePort" :: Maybe (InstancePort), "PolicyNames" :: Maybe (PolicyNames) }) -> BackendServerDescription
 ```
 
 Constructs BackendServerDescription's fields from required parameters
@@ -728,7 +728,7 @@ Constructs ConfigureHealthCheckInput's fields from required parameters
 
 ``` purescript
 newtype ConfigureHealthCheckOutput
-  = ConfigureHealthCheckOutput { "HealthCheck" :: NullOrUndefined (HealthCheck) }
+  = ConfigureHealthCheckOutput { "HealthCheck" :: Maybe (HealthCheck) }
 ```
 
 <p>Contains the output of ConfigureHealthCheck.</p>
@@ -753,7 +753,7 @@ Constructs ConfigureHealthCheckOutput from required parameters
 #### `newConfigureHealthCheckOutput'`
 
 ``` purescript
-newConfigureHealthCheckOutput' :: ({ "HealthCheck" :: NullOrUndefined (HealthCheck) } -> { "HealthCheck" :: NullOrUndefined (HealthCheck) }) -> ConfigureHealthCheckOutput
+newConfigureHealthCheckOutput' :: ({ "HealthCheck" :: Maybe (HealthCheck) } -> { "HealthCheck" :: Maybe (HealthCheck) }) -> ConfigureHealthCheckOutput
 ```
 
 Constructs ConfigureHealthCheckOutput's fields from required parameters
@@ -762,7 +762,7 @@ Constructs ConfigureHealthCheckOutput's fields from required parameters
 
 ``` purescript
 newtype ConnectionDraining
-  = ConnectionDraining { "Enabled" :: ConnectionDrainingEnabled, "Timeout" :: NullOrUndefined (ConnectionDrainingTimeout) }
+  = ConnectionDraining { "Enabled" :: ConnectionDrainingEnabled, "Timeout" :: Maybe (ConnectionDrainingTimeout) }
 ```
 
 <p>Information about the <code>ConnectionDraining</code> attribute.</p>
@@ -787,7 +787,7 @@ Constructs ConnectionDraining from required parameters
 #### `newConnectionDraining'`
 
 ``` purescript
-newConnectionDraining' :: ConnectionDrainingEnabled -> ({ "Enabled" :: ConnectionDrainingEnabled, "Timeout" :: NullOrUndefined (ConnectionDrainingTimeout) } -> { "Enabled" :: ConnectionDrainingEnabled, "Timeout" :: NullOrUndefined (ConnectionDrainingTimeout) }) -> ConnectionDraining
+newConnectionDraining' :: ConnectionDrainingEnabled -> ({ "Enabled" :: ConnectionDrainingEnabled, "Timeout" :: Maybe (ConnectionDrainingTimeout) } -> { "Enabled" :: ConnectionDrainingEnabled, "Timeout" :: Maybe (ConnectionDrainingTimeout) }) -> ConnectionDraining
 ```
 
 Constructs ConnectionDraining's fields from required parameters
@@ -894,7 +894,7 @@ Encode CookieName
 
 ``` purescript
 newtype CreateAccessPointInput
-  = CreateAccessPointInput { "LoadBalancerName" :: AccessPointName, "Listeners" :: Listeners, "AvailabilityZones" :: NullOrUndefined (AvailabilityZones), "Subnets" :: NullOrUndefined (Subnets), "SecurityGroups" :: NullOrUndefined (SecurityGroups), "Scheme" :: NullOrUndefined (LoadBalancerScheme), "Tags" :: NullOrUndefined (TagList) }
+  = CreateAccessPointInput { "LoadBalancerName" :: AccessPointName, "Listeners" :: Listeners, "AvailabilityZones" :: Maybe (AvailabilityZones), "Subnets" :: Maybe (Subnets), "SecurityGroups" :: Maybe (SecurityGroups), "Scheme" :: Maybe (LoadBalancerScheme), "Tags" :: Maybe (TagList) }
 ```
 
 <p>Contains the parameters for CreateLoadBalancer.</p>
@@ -919,7 +919,7 @@ Constructs CreateAccessPointInput from required parameters
 #### `newCreateAccessPointInput'`
 
 ``` purescript
-newCreateAccessPointInput' :: Listeners -> AccessPointName -> ({ "LoadBalancerName" :: AccessPointName, "Listeners" :: Listeners, "AvailabilityZones" :: NullOrUndefined (AvailabilityZones), "Subnets" :: NullOrUndefined (Subnets), "SecurityGroups" :: NullOrUndefined (SecurityGroups), "Scheme" :: NullOrUndefined (LoadBalancerScheme), "Tags" :: NullOrUndefined (TagList) } -> { "LoadBalancerName" :: AccessPointName, "Listeners" :: Listeners, "AvailabilityZones" :: NullOrUndefined (AvailabilityZones), "Subnets" :: NullOrUndefined (Subnets), "SecurityGroups" :: NullOrUndefined (SecurityGroups), "Scheme" :: NullOrUndefined (LoadBalancerScheme), "Tags" :: NullOrUndefined (TagList) }) -> CreateAccessPointInput
+newCreateAccessPointInput' :: Listeners -> AccessPointName -> ({ "LoadBalancerName" :: AccessPointName, "Listeners" :: Listeners, "AvailabilityZones" :: Maybe (AvailabilityZones), "Subnets" :: Maybe (Subnets), "SecurityGroups" :: Maybe (SecurityGroups), "Scheme" :: Maybe (LoadBalancerScheme), "Tags" :: Maybe (TagList) } -> { "LoadBalancerName" :: AccessPointName, "Listeners" :: Listeners, "AvailabilityZones" :: Maybe (AvailabilityZones), "Subnets" :: Maybe (Subnets), "SecurityGroups" :: Maybe (SecurityGroups), "Scheme" :: Maybe (LoadBalancerScheme), "Tags" :: Maybe (TagList) }) -> CreateAccessPointInput
 ```
 
 Constructs CreateAccessPointInput's fields from required parameters
@@ -928,7 +928,7 @@ Constructs CreateAccessPointInput's fields from required parameters
 
 ``` purescript
 newtype CreateAccessPointOutput
-  = CreateAccessPointOutput { "DNSName" :: NullOrUndefined (DNSName) }
+  = CreateAccessPointOutput { "DNSName" :: Maybe (DNSName) }
 ```
 
 <p>Contains the output for CreateLoadBalancer.</p>
@@ -953,7 +953,7 @@ Constructs CreateAccessPointOutput from required parameters
 #### `newCreateAccessPointOutput'`
 
 ``` purescript
-newCreateAccessPointOutput' :: ({ "DNSName" :: NullOrUndefined (DNSName) } -> { "DNSName" :: NullOrUndefined (DNSName) }) -> CreateAccessPointOutput
+newCreateAccessPointOutput' :: ({ "DNSName" :: Maybe (DNSName) } -> { "DNSName" :: Maybe (DNSName) }) -> CreateAccessPointOutput
 ```
 
 Constructs CreateAccessPointOutput's fields from required parameters
@@ -1014,7 +1014,7 @@ Encode CreateAppCookieStickinessPolicyOutput
 
 ``` purescript
 newtype CreateLBCookieStickinessPolicyInput
-  = CreateLBCookieStickinessPolicyInput { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "CookieExpirationPeriod" :: NullOrUndefined (CookieExpirationPeriod) }
+  = CreateLBCookieStickinessPolicyInput { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "CookieExpirationPeriod" :: Maybe (CookieExpirationPeriod) }
 ```
 
 <p>Contains the parameters for CreateLBCookieStickinessPolicy.</p>
@@ -1039,7 +1039,7 @@ Constructs CreateLBCookieStickinessPolicyInput from required parameters
 #### `newCreateLBCookieStickinessPolicyInput'`
 
 ``` purescript
-newCreateLBCookieStickinessPolicyInput' :: AccessPointName -> PolicyName -> ({ "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "CookieExpirationPeriod" :: NullOrUndefined (CookieExpirationPeriod) } -> { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "CookieExpirationPeriod" :: NullOrUndefined (CookieExpirationPeriod) }) -> CreateLBCookieStickinessPolicyInput
+newCreateLBCookieStickinessPolicyInput' :: AccessPointName -> PolicyName -> ({ "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "CookieExpirationPeriod" :: Maybe (CookieExpirationPeriod) } -> { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "CookieExpirationPeriod" :: Maybe (CookieExpirationPeriod) }) -> CreateLBCookieStickinessPolicyInput
 ```
 
 Constructs CreateLBCookieStickinessPolicyInput's fields from required parameters
@@ -1118,7 +1118,7 @@ Encode CreateLoadBalancerListenerOutput
 
 ``` purescript
 newtype CreateLoadBalancerPolicyInput
-  = CreateLoadBalancerPolicyInput { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "PolicyTypeName" :: PolicyTypeName, "PolicyAttributes" :: NullOrUndefined (PolicyAttributes) }
+  = CreateLoadBalancerPolicyInput { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "PolicyTypeName" :: PolicyTypeName, "PolicyAttributes" :: Maybe (PolicyAttributes) }
 ```
 
 <p>Contains the parameters for CreateLoadBalancerPolicy.</p>
@@ -1143,7 +1143,7 @@ Constructs CreateLoadBalancerPolicyInput from required parameters
 #### `newCreateLoadBalancerPolicyInput'`
 
 ``` purescript
-newCreateLoadBalancerPolicyInput' :: AccessPointName -> PolicyName -> PolicyTypeName -> ({ "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "PolicyTypeName" :: PolicyTypeName, "PolicyAttributes" :: NullOrUndefined (PolicyAttributes) } -> { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "PolicyTypeName" :: PolicyTypeName, "PolicyAttributes" :: NullOrUndefined (PolicyAttributes) }) -> CreateLoadBalancerPolicyInput
+newCreateLoadBalancerPolicyInput' :: AccessPointName -> PolicyName -> PolicyTypeName -> ({ "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "PolicyTypeName" :: PolicyTypeName, "PolicyAttributes" :: Maybe (PolicyAttributes) } -> { "LoadBalancerName" :: AccessPointName, "PolicyName" :: PolicyName, "PolicyTypeName" :: PolicyTypeName, "PolicyAttributes" :: Maybe (PolicyAttributes) }) -> CreateLoadBalancerPolicyInput
 ```
 
 Constructs CreateLoadBalancerPolicyInput's fields from required parameters
@@ -1474,7 +1474,7 @@ Constructs DeregisterEndPointsInput's fields from required parameters
 
 ``` purescript
 newtype DeregisterEndPointsOutput
-  = DeregisterEndPointsOutput { "Instances" :: NullOrUndefined (Instances) }
+  = DeregisterEndPointsOutput { "Instances" :: Maybe (Instances) }
 ```
 
 <p>Contains the output of DeregisterInstancesFromLoadBalancer.</p>
@@ -1499,7 +1499,7 @@ Constructs DeregisterEndPointsOutput from required parameters
 #### `newDeregisterEndPointsOutput'`
 
 ``` purescript
-newDeregisterEndPointsOutput' :: ({ "Instances" :: NullOrUndefined (Instances) } -> { "Instances" :: NullOrUndefined (Instances) }) -> DeregisterEndPointsOutput
+newDeregisterEndPointsOutput' :: ({ "Instances" :: Maybe (Instances) } -> { "Instances" :: Maybe (Instances) }) -> DeregisterEndPointsOutput
 ```
 
 Constructs DeregisterEndPointsOutput's fields from required parameters
@@ -1508,7 +1508,7 @@ Constructs DeregisterEndPointsOutput's fields from required parameters
 
 ``` purescript
 newtype DescribeAccessPointsInput
-  = DescribeAccessPointsInput { "LoadBalancerNames" :: NullOrUndefined (LoadBalancerNames), "Marker" :: NullOrUndefined (Marker), "PageSize" :: NullOrUndefined (PageSize) }
+  = DescribeAccessPointsInput { "LoadBalancerNames" :: Maybe (LoadBalancerNames), "Marker" :: Maybe (Marker), "PageSize" :: Maybe (PageSize) }
 ```
 
 <p>Contains the parameters for DescribeLoadBalancers.</p>
@@ -1533,7 +1533,7 @@ Constructs DescribeAccessPointsInput from required parameters
 #### `newDescribeAccessPointsInput'`
 
 ``` purescript
-newDescribeAccessPointsInput' :: ({ "LoadBalancerNames" :: NullOrUndefined (LoadBalancerNames), "Marker" :: NullOrUndefined (Marker), "PageSize" :: NullOrUndefined (PageSize) } -> { "LoadBalancerNames" :: NullOrUndefined (LoadBalancerNames), "Marker" :: NullOrUndefined (Marker), "PageSize" :: NullOrUndefined (PageSize) }) -> DescribeAccessPointsInput
+newDescribeAccessPointsInput' :: ({ "LoadBalancerNames" :: Maybe (LoadBalancerNames), "Marker" :: Maybe (Marker), "PageSize" :: Maybe (PageSize) } -> { "LoadBalancerNames" :: Maybe (LoadBalancerNames), "Marker" :: Maybe (Marker), "PageSize" :: Maybe (PageSize) }) -> DescribeAccessPointsInput
 ```
 
 Constructs DescribeAccessPointsInput's fields from required parameters
@@ -1542,7 +1542,7 @@ Constructs DescribeAccessPointsInput's fields from required parameters
 
 ``` purescript
 newtype DescribeAccessPointsOutput
-  = DescribeAccessPointsOutput { "LoadBalancerDescriptions" :: NullOrUndefined (LoadBalancerDescriptions), "NextMarker" :: NullOrUndefined (Marker) }
+  = DescribeAccessPointsOutput { "LoadBalancerDescriptions" :: Maybe (LoadBalancerDescriptions), "NextMarker" :: Maybe (Marker) }
 ```
 
 <p>Contains the parameters for DescribeLoadBalancers.</p>
@@ -1567,7 +1567,7 @@ Constructs DescribeAccessPointsOutput from required parameters
 #### `newDescribeAccessPointsOutput'`
 
 ``` purescript
-newDescribeAccessPointsOutput' :: ({ "LoadBalancerDescriptions" :: NullOrUndefined (LoadBalancerDescriptions), "NextMarker" :: NullOrUndefined (Marker) } -> { "LoadBalancerDescriptions" :: NullOrUndefined (LoadBalancerDescriptions), "NextMarker" :: NullOrUndefined (Marker) }) -> DescribeAccessPointsOutput
+newDescribeAccessPointsOutput' :: ({ "LoadBalancerDescriptions" :: Maybe (LoadBalancerDescriptions), "NextMarker" :: Maybe (Marker) } -> { "LoadBalancerDescriptions" :: Maybe (LoadBalancerDescriptions), "NextMarker" :: Maybe (Marker) }) -> DescribeAccessPointsOutput
 ```
 
 Constructs DescribeAccessPointsOutput's fields from required parameters
@@ -1576,7 +1576,7 @@ Constructs DescribeAccessPointsOutput's fields from required parameters
 
 ``` purescript
 newtype DescribeAccountLimitsInput
-  = DescribeAccountLimitsInput { "Marker" :: NullOrUndefined (Marker), "PageSize" :: NullOrUndefined (PageSize) }
+  = DescribeAccountLimitsInput { "Marker" :: Maybe (Marker), "PageSize" :: Maybe (PageSize) }
 ```
 
 ##### Instances
@@ -1599,7 +1599,7 @@ Constructs DescribeAccountLimitsInput from required parameters
 #### `newDescribeAccountLimitsInput'`
 
 ``` purescript
-newDescribeAccountLimitsInput' :: ({ "Marker" :: NullOrUndefined (Marker), "PageSize" :: NullOrUndefined (PageSize) } -> { "Marker" :: NullOrUndefined (Marker), "PageSize" :: NullOrUndefined (PageSize) }) -> DescribeAccountLimitsInput
+newDescribeAccountLimitsInput' :: ({ "Marker" :: Maybe (Marker), "PageSize" :: Maybe (PageSize) } -> { "Marker" :: Maybe (Marker), "PageSize" :: Maybe (PageSize) }) -> DescribeAccountLimitsInput
 ```
 
 Constructs DescribeAccountLimitsInput's fields from required parameters
@@ -1608,7 +1608,7 @@ Constructs DescribeAccountLimitsInput's fields from required parameters
 
 ``` purescript
 newtype DescribeAccountLimitsOutput
-  = DescribeAccountLimitsOutput { "Limits" :: NullOrUndefined (Limits), "NextMarker" :: NullOrUndefined (Marker) }
+  = DescribeAccountLimitsOutput { "Limits" :: Maybe (Limits), "NextMarker" :: Maybe (Marker) }
 ```
 
 ##### Instances
@@ -1631,7 +1631,7 @@ Constructs DescribeAccountLimitsOutput from required parameters
 #### `newDescribeAccountLimitsOutput'`
 
 ``` purescript
-newDescribeAccountLimitsOutput' :: ({ "Limits" :: NullOrUndefined (Limits), "NextMarker" :: NullOrUndefined (Marker) } -> { "Limits" :: NullOrUndefined (Limits), "NextMarker" :: NullOrUndefined (Marker) }) -> DescribeAccountLimitsOutput
+newDescribeAccountLimitsOutput' :: ({ "Limits" :: Maybe (Limits), "NextMarker" :: Maybe (Marker) } -> { "Limits" :: Maybe (Limits), "NextMarker" :: Maybe (Marker) }) -> DescribeAccountLimitsOutput
 ```
 
 Constructs DescribeAccountLimitsOutput's fields from required parameters
@@ -1640,7 +1640,7 @@ Constructs DescribeAccountLimitsOutput's fields from required parameters
 
 ``` purescript
 newtype DescribeEndPointStateInput
-  = DescribeEndPointStateInput { "LoadBalancerName" :: AccessPointName, "Instances" :: NullOrUndefined (Instances) }
+  = DescribeEndPointStateInput { "LoadBalancerName" :: AccessPointName, "Instances" :: Maybe (Instances) }
 ```
 
 <p>Contains the parameters for DescribeInstanceHealth.</p>
@@ -1665,7 +1665,7 @@ Constructs DescribeEndPointStateInput from required parameters
 #### `newDescribeEndPointStateInput'`
 
 ``` purescript
-newDescribeEndPointStateInput' :: AccessPointName -> ({ "LoadBalancerName" :: AccessPointName, "Instances" :: NullOrUndefined (Instances) } -> { "LoadBalancerName" :: AccessPointName, "Instances" :: NullOrUndefined (Instances) }) -> DescribeEndPointStateInput
+newDescribeEndPointStateInput' :: AccessPointName -> ({ "LoadBalancerName" :: AccessPointName, "Instances" :: Maybe (Instances) } -> { "LoadBalancerName" :: AccessPointName, "Instances" :: Maybe (Instances) }) -> DescribeEndPointStateInput
 ```
 
 Constructs DescribeEndPointStateInput's fields from required parameters
@@ -1674,7 +1674,7 @@ Constructs DescribeEndPointStateInput's fields from required parameters
 
 ``` purescript
 newtype DescribeEndPointStateOutput
-  = DescribeEndPointStateOutput { "InstanceStates" :: NullOrUndefined (InstanceStates) }
+  = DescribeEndPointStateOutput { "InstanceStates" :: Maybe (InstanceStates) }
 ```
 
 <p>Contains the output for DescribeInstanceHealth.</p>
@@ -1699,7 +1699,7 @@ Constructs DescribeEndPointStateOutput from required parameters
 #### `newDescribeEndPointStateOutput'`
 
 ``` purescript
-newDescribeEndPointStateOutput' :: ({ "InstanceStates" :: NullOrUndefined (InstanceStates) } -> { "InstanceStates" :: NullOrUndefined (InstanceStates) }) -> DescribeEndPointStateOutput
+newDescribeEndPointStateOutput' :: ({ "InstanceStates" :: Maybe (InstanceStates) } -> { "InstanceStates" :: Maybe (InstanceStates) }) -> DescribeEndPointStateOutput
 ```
 
 Constructs DescribeEndPointStateOutput's fields from required parameters
@@ -1742,7 +1742,7 @@ Constructs DescribeLoadBalancerAttributesInput's fields from required parameters
 
 ``` purescript
 newtype DescribeLoadBalancerAttributesOutput
-  = DescribeLoadBalancerAttributesOutput { "LoadBalancerAttributes" :: NullOrUndefined (LoadBalancerAttributes) }
+  = DescribeLoadBalancerAttributesOutput { "LoadBalancerAttributes" :: Maybe (LoadBalancerAttributes) }
 ```
 
 <p>Contains the output of DescribeLoadBalancerAttributes.</p>
@@ -1767,7 +1767,7 @@ Constructs DescribeLoadBalancerAttributesOutput from required parameters
 #### `newDescribeLoadBalancerAttributesOutput'`
 
 ``` purescript
-newDescribeLoadBalancerAttributesOutput' :: ({ "LoadBalancerAttributes" :: NullOrUndefined (LoadBalancerAttributes) } -> { "LoadBalancerAttributes" :: NullOrUndefined (LoadBalancerAttributes) }) -> DescribeLoadBalancerAttributesOutput
+newDescribeLoadBalancerAttributesOutput' :: ({ "LoadBalancerAttributes" :: Maybe (LoadBalancerAttributes) } -> { "LoadBalancerAttributes" :: Maybe (LoadBalancerAttributes) }) -> DescribeLoadBalancerAttributesOutput
 ```
 
 Constructs DescribeLoadBalancerAttributesOutput's fields from required parameters
@@ -1776,7 +1776,7 @@ Constructs DescribeLoadBalancerAttributesOutput's fields from required parameter
 
 ``` purescript
 newtype DescribeLoadBalancerPoliciesInput
-  = DescribeLoadBalancerPoliciesInput { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "PolicyNames" :: NullOrUndefined (PolicyNames) }
+  = DescribeLoadBalancerPoliciesInput { "LoadBalancerName" :: Maybe (AccessPointName), "PolicyNames" :: Maybe (PolicyNames) }
 ```
 
 <p>Contains the parameters for DescribeLoadBalancerPolicies.</p>
@@ -1801,7 +1801,7 @@ Constructs DescribeLoadBalancerPoliciesInput from required parameters
 #### `newDescribeLoadBalancerPoliciesInput'`
 
 ``` purescript
-newDescribeLoadBalancerPoliciesInput' :: ({ "LoadBalancerName" :: NullOrUndefined (AccessPointName), "PolicyNames" :: NullOrUndefined (PolicyNames) } -> { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "PolicyNames" :: NullOrUndefined (PolicyNames) }) -> DescribeLoadBalancerPoliciesInput
+newDescribeLoadBalancerPoliciesInput' :: ({ "LoadBalancerName" :: Maybe (AccessPointName), "PolicyNames" :: Maybe (PolicyNames) } -> { "LoadBalancerName" :: Maybe (AccessPointName), "PolicyNames" :: Maybe (PolicyNames) }) -> DescribeLoadBalancerPoliciesInput
 ```
 
 Constructs DescribeLoadBalancerPoliciesInput's fields from required parameters
@@ -1810,7 +1810,7 @@ Constructs DescribeLoadBalancerPoliciesInput's fields from required parameters
 
 ``` purescript
 newtype DescribeLoadBalancerPoliciesOutput
-  = DescribeLoadBalancerPoliciesOutput { "PolicyDescriptions" :: NullOrUndefined (PolicyDescriptions) }
+  = DescribeLoadBalancerPoliciesOutput { "PolicyDescriptions" :: Maybe (PolicyDescriptions) }
 ```
 
 <p>Contains the output of DescribeLoadBalancerPolicies.</p>
@@ -1835,7 +1835,7 @@ Constructs DescribeLoadBalancerPoliciesOutput from required parameters
 #### `newDescribeLoadBalancerPoliciesOutput'`
 
 ``` purescript
-newDescribeLoadBalancerPoliciesOutput' :: ({ "PolicyDescriptions" :: NullOrUndefined (PolicyDescriptions) } -> { "PolicyDescriptions" :: NullOrUndefined (PolicyDescriptions) }) -> DescribeLoadBalancerPoliciesOutput
+newDescribeLoadBalancerPoliciesOutput' :: ({ "PolicyDescriptions" :: Maybe (PolicyDescriptions) } -> { "PolicyDescriptions" :: Maybe (PolicyDescriptions) }) -> DescribeLoadBalancerPoliciesOutput
 ```
 
 Constructs DescribeLoadBalancerPoliciesOutput's fields from required parameters
@@ -1844,7 +1844,7 @@ Constructs DescribeLoadBalancerPoliciesOutput's fields from required parameters
 
 ``` purescript
 newtype DescribeLoadBalancerPolicyTypesInput
-  = DescribeLoadBalancerPolicyTypesInput { "PolicyTypeNames" :: NullOrUndefined (PolicyTypeNames) }
+  = DescribeLoadBalancerPolicyTypesInput { "PolicyTypeNames" :: Maybe (PolicyTypeNames) }
 ```
 
 <p>Contains the parameters for DescribeLoadBalancerPolicyTypes.</p>
@@ -1869,7 +1869,7 @@ Constructs DescribeLoadBalancerPolicyTypesInput from required parameters
 #### `newDescribeLoadBalancerPolicyTypesInput'`
 
 ``` purescript
-newDescribeLoadBalancerPolicyTypesInput' :: ({ "PolicyTypeNames" :: NullOrUndefined (PolicyTypeNames) } -> { "PolicyTypeNames" :: NullOrUndefined (PolicyTypeNames) }) -> DescribeLoadBalancerPolicyTypesInput
+newDescribeLoadBalancerPolicyTypesInput' :: ({ "PolicyTypeNames" :: Maybe (PolicyTypeNames) } -> { "PolicyTypeNames" :: Maybe (PolicyTypeNames) }) -> DescribeLoadBalancerPolicyTypesInput
 ```
 
 Constructs DescribeLoadBalancerPolicyTypesInput's fields from required parameters
@@ -1878,7 +1878,7 @@ Constructs DescribeLoadBalancerPolicyTypesInput's fields from required parameter
 
 ``` purescript
 newtype DescribeLoadBalancerPolicyTypesOutput
-  = DescribeLoadBalancerPolicyTypesOutput { "PolicyTypeDescriptions" :: NullOrUndefined (PolicyTypeDescriptions) }
+  = DescribeLoadBalancerPolicyTypesOutput { "PolicyTypeDescriptions" :: Maybe (PolicyTypeDescriptions) }
 ```
 
 <p>Contains the output of DescribeLoadBalancerPolicyTypes.</p>
@@ -1903,7 +1903,7 @@ Constructs DescribeLoadBalancerPolicyTypesOutput from required parameters
 #### `newDescribeLoadBalancerPolicyTypesOutput'`
 
 ``` purescript
-newDescribeLoadBalancerPolicyTypesOutput' :: ({ "PolicyTypeDescriptions" :: NullOrUndefined (PolicyTypeDescriptions) } -> { "PolicyTypeDescriptions" :: NullOrUndefined (PolicyTypeDescriptions) }) -> DescribeLoadBalancerPolicyTypesOutput
+newDescribeLoadBalancerPolicyTypesOutput' :: ({ "PolicyTypeDescriptions" :: Maybe (PolicyTypeDescriptions) } -> { "PolicyTypeDescriptions" :: Maybe (PolicyTypeDescriptions) }) -> DescribeLoadBalancerPolicyTypesOutput
 ```
 
 Constructs DescribeLoadBalancerPolicyTypesOutput's fields from required parameters
@@ -1946,7 +1946,7 @@ Constructs DescribeTagsInput's fields from required parameters
 
 ``` purescript
 newtype DescribeTagsOutput
-  = DescribeTagsOutput { "TagDescriptions" :: NullOrUndefined (TagDescriptions) }
+  = DescribeTagsOutput { "TagDescriptions" :: Maybe (TagDescriptions) }
 ```
 
 <p>Contains the output for DescribeTags.</p>
@@ -1971,7 +1971,7 @@ Constructs DescribeTagsOutput from required parameters
 #### `newDescribeTagsOutput'`
 
 ``` purescript
-newDescribeTagsOutput' :: ({ "TagDescriptions" :: NullOrUndefined (TagDescriptions) } -> { "TagDescriptions" :: NullOrUndefined (TagDescriptions) }) -> DescribeTagsOutput
+newDescribeTagsOutput' :: ({ "TagDescriptions" :: Maybe (TagDescriptions) } -> { "TagDescriptions" :: Maybe (TagDescriptions) }) -> DescribeTagsOutput
 ```
 
 Constructs DescribeTagsOutput's fields from required parameters
@@ -2030,7 +2030,7 @@ Constructs DetachLoadBalancerFromSubnetsInput's fields from required parameters
 
 ``` purescript
 newtype DetachLoadBalancerFromSubnetsOutput
-  = DetachLoadBalancerFromSubnetsOutput { "Subnets" :: NullOrUndefined (Subnets) }
+  = DetachLoadBalancerFromSubnetsOutput { "Subnets" :: Maybe (Subnets) }
 ```
 
 <p>Contains the output of DetachLoadBalancerFromSubnets.</p>
@@ -2055,7 +2055,7 @@ Constructs DetachLoadBalancerFromSubnetsOutput from required parameters
 #### `newDetachLoadBalancerFromSubnetsOutput'`
 
 ``` purescript
-newDetachLoadBalancerFromSubnetsOutput' :: ({ "Subnets" :: NullOrUndefined (Subnets) } -> { "Subnets" :: NullOrUndefined (Subnets) }) -> DetachLoadBalancerFromSubnetsOutput
+newDetachLoadBalancerFromSubnetsOutput' :: ({ "Subnets" :: Maybe (Subnets) } -> { "Subnets" :: Maybe (Subnets) }) -> DetachLoadBalancerFromSubnetsOutput
 ```
 
 Constructs DetachLoadBalancerFromSubnetsOutput's fields from required parameters
@@ -2266,7 +2266,7 @@ Encode IdleTimeout
 
 ``` purescript
 newtype Instance
-  = Instance { "InstanceId" :: NullOrUndefined (InstanceId) }
+  = Instance { "InstanceId" :: Maybe (InstanceId) }
 ```
 
 <p>The ID of an EC2 instance.</p>
@@ -2291,7 +2291,7 @@ Constructs Instance from required parameters
 #### `newInstance'`
 
 ``` purescript
-newInstance' :: ({ "InstanceId" :: NullOrUndefined (InstanceId) } -> { "InstanceId" :: NullOrUndefined (InstanceId) }) -> Instance
+newInstance' :: ({ "InstanceId" :: Maybe (InstanceId) } -> { "InstanceId" :: Maybe (InstanceId) }) -> Instance
 ```
 
 Constructs Instance's fields from required parameters
@@ -2332,7 +2332,7 @@ Encode InstancePort
 
 ``` purescript
 newtype InstanceState
-  = InstanceState { "InstanceId" :: NullOrUndefined (InstanceId), "State" :: NullOrUndefined (State), "ReasonCode" :: NullOrUndefined (ReasonCode), "Description" :: NullOrUndefined (Description) }
+  = InstanceState { "InstanceId" :: Maybe (InstanceId), "State" :: Maybe (State), "ReasonCode" :: Maybe (ReasonCode), "Description" :: Maybe (Description) }
 ```
 
 <p>Information about the state of an EC2 instance.</p>
@@ -2357,7 +2357,7 @@ Constructs InstanceState from required parameters
 #### `newInstanceState'`
 
 ``` purescript
-newInstanceState' :: ({ "InstanceId" :: NullOrUndefined (InstanceId), "State" :: NullOrUndefined (State), "ReasonCode" :: NullOrUndefined (ReasonCode), "Description" :: NullOrUndefined (Description) } -> { "InstanceId" :: NullOrUndefined (InstanceId), "State" :: NullOrUndefined (State), "ReasonCode" :: NullOrUndefined (ReasonCode), "Description" :: NullOrUndefined (Description) }) -> InstanceState
+newInstanceState' :: ({ "InstanceId" :: Maybe (InstanceId), "State" :: Maybe (State), "ReasonCode" :: Maybe (ReasonCode), "Description" :: Maybe (Description) } -> { "InstanceId" :: Maybe (InstanceId), "State" :: Maybe (State), "ReasonCode" :: Maybe (ReasonCode), "Description" :: Maybe (Description) }) -> InstanceState
 ```
 
 Constructs InstanceState's fields from required parameters
@@ -2504,7 +2504,7 @@ Encode LBCookieStickinessPolicies
 
 ``` purescript
 newtype LBCookieStickinessPolicy
-  = LBCookieStickinessPolicy { "PolicyName" :: NullOrUndefined (PolicyName), "CookieExpirationPeriod" :: NullOrUndefined (CookieExpirationPeriod) }
+  = LBCookieStickinessPolicy { "PolicyName" :: Maybe (PolicyName), "CookieExpirationPeriod" :: Maybe (CookieExpirationPeriod) }
 ```
 
 <p>Information about a policy for duration-based session stickiness.</p>
@@ -2529,7 +2529,7 @@ Constructs LBCookieStickinessPolicy from required parameters
 #### `newLBCookieStickinessPolicy'`
 
 ``` purescript
-newLBCookieStickinessPolicy' :: ({ "PolicyName" :: NullOrUndefined (PolicyName), "CookieExpirationPeriod" :: NullOrUndefined (CookieExpirationPeriod) } -> { "PolicyName" :: NullOrUndefined (PolicyName), "CookieExpirationPeriod" :: NullOrUndefined (CookieExpirationPeriod) }) -> LBCookieStickinessPolicy
+newLBCookieStickinessPolicy' :: ({ "PolicyName" :: Maybe (PolicyName), "CookieExpirationPeriod" :: Maybe (CookieExpirationPeriod) } -> { "PolicyName" :: Maybe (PolicyName), "CookieExpirationPeriod" :: Maybe (CookieExpirationPeriod) }) -> LBCookieStickinessPolicy
 ```
 
 Constructs LBCookieStickinessPolicy's fields from required parameters
@@ -2538,7 +2538,7 @@ Constructs LBCookieStickinessPolicy's fields from required parameters
 
 ``` purescript
 newtype Limit
-  = Limit { "Name" :: NullOrUndefined (Name), "Max" :: NullOrUndefined (Max) }
+  = Limit { "Name" :: Maybe (Name), "Max" :: Maybe (Max) }
 ```
 
 <p>Information about an Elastic Load Balancing resource limit for your AWS account.</p>
@@ -2563,7 +2563,7 @@ Constructs Limit from required parameters
 #### `newLimit'`
 
 ``` purescript
-newLimit' :: ({ "Name" :: NullOrUndefined (Name), "Max" :: NullOrUndefined (Max) } -> { "Name" :: NullOrUndefined (Name), "Max" :: NullOrUndefined (Max) }) -> Limit
+newLimit' :: ({ "Name" :: Maybe (Name), "Max" :: Maybe (Max) } -> { "Name" :: Maybe (Name), "Max" :: Maybe (Max) }) -> Limit
 ```
 
 Constructs Limit's fields from required parameters
@@ -2588,7 +2588,7 @@ Encode Limits
 
 ``` purescript
 newtype Listener
-  = Listener { "Protocol" :: Protocol, "LoadBalancerPort" :: AccessPointPort, "InstanceProtocol" :: NullOrUndefined (Protocol), "InstancePort" :: InstancePort, "SSLCertificateId" :: NullOrUndefined (SSLCertificateId) }
+  = Listener { "Protocol" :: Protocol, "LoadBalancerPort" :: AccessPointPort, "InstanceProtocol" :: Maybe (Protocol), "InstancePort" :: InstancePort, "SSLCertificateId" :: Maybe (SSLCertificateId) }
 ```
 
 <p>Information about a listener.</p> <p>For information about the protocols and the ports supported by Elastic Load Balancing, see <a href="http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html">Listeners for Your Classic Load Balancer</a> in the <i>Classic Load Balancer Guide</i>.</p>
@@ -2613,7 +2613,7 @@ Constructs Listener from required parameters
 #### `newListener'`
 
 ``` purescript
-newListener' :: InstancePort -> AccessPointPort -> Protocol -> ({ "Protocol" :: Protocol, "LoadBalancerPort" :: AccessPointPort, "InstanceProtocol" :: NullOrUndefined (Protocol), "InstancePort" :: InstancePort, "SSLCertificateId" :: NullOrUndefined (SSLCertificateId) } -> { "Protocol" :: Protocol, "LoadBalancerPort" :: AccessPointPort, "InstanceProtocol" :: NullOrUndefined (Protocol), "InstancePort" :: InstancePort, "SSLCertificateId" :: NullOrUndefined (SSLCertificateId) }) -> Listener
+newListener' :: InstancePort -> AccessPointPort -> Protocol -> ({ "Protocol" :: Protocol, "LoadBalancerPort" :: AccessPointPort, "InstanceProtocol" :: Maybe (Protocol), "InstancePort" :: InstancePort, "SSLCertificateId" :: Maybe (SSLCertificateId) } -> { "Protocol" :: Protocol, "LoadBalancerPort" :: AccessPointPort, "InstanceProtocol" :: Maybe (Protocol), "InstancePort" :: InstancePort, "SSLCertificateId" :: Maybe (SSLCertificateId) }) -> Listener
 ```
 
 Constructs Listener's fields from required parameters
@@ -2622,7 +2622,7 @@ Constructs Listener's fields from required parameters
 
 ``` purescript
 newtype ListenerDescription
-  = ListenerDescription { "Listener" :: NullOrUndefined (Listener), "PolicyNames" :: NullOrUndefined (PolicyNames) }
+  = ListenerDescription { "Listener" :: Maybe (Listener), "PolicyNames" :: Maybe (PolicyNames) }
 ```
 
 <p>The policies enabled for a listener.</p>
@@ -2647,7 +2647,7 @@ Constructs ListenerDescription from required parameters
 #### `newListenerDescription'`
 
 ``` purescript
-newListenerDescription' :: ({ "Listener" :: NullOrUndefined (Listener), "PolicyNames" :: NullOrUndefined (PolicyNames) } -> { "Listener" :: NullOrUndefined (Listener), "PolicyNames" :: NullOrUndefined (PolicyNames) }) -> ListenerDescription
+newListenerDescription' :: ({ "Listener" :: Maybe (Listener), "PolicyNames" :: Maybe (PolicyNames) } -> { "Listener" :: Maybe (Listener), "PolicyNames" :: Maybe (PolicyNames) }) -> ListenerDescription
 ```
 
 Constructs ListenerDescription's fields from required parameters
@@ -2724,7 +2724,7 @@ Encode LoadBalancerAttributeNotFoundException
 
 ``` purescript
 newtype LoadBalancerAttributes
-  = LoadBalancerAttributes { "CrossZoneLoadBalancing" :: NullOrUndefined (CrossZoneLoadBalancing), "AccessLog" :: NullOrUndefined (AccessLog), "ConnectionDraining" :: NullOrUndefined (ConnectionDraining), "ConnectionSettings" :: NullOrUndefined (ConnectionSettings), "AdditionalAttributes" :: NullOrUndefined (AdditionalAttributes) }
+  = LoadBalancerAttributes { "CrossZoneLoadBalancing" :: Maybe (CrossZoneLoadBalancing), "AccessLog" :: Maybe (AccessLog), "ConnectionDraining" :: Maybe (ConnectionDraining), "ConnectionSettings" :: Maybe (ConnectionSettings), "AdditionalAttributes" :: Maybe (AdditionalAttributes) }
 ```
 
 <p>The attributes for a load balancer.</p>
@@ -2749,7 +2749,7 @@ Constructs LoadBalancerAttributes from required parameters
 #### `newLoadBalancerAttributes'`
 
 ``` purescript
-newLoadBalancerAttributes' :: ({ "CrossZoneLoadBalancing" :: NullOrUndefined (CrossZoneLoadBalancing), "AccessLog" :: NullOrUndefined (AccessLog), "ConnectionDraining" :: NullOrUndefined (ConnectionDraining), "ConnectionSettings" :: NullOrUndefined (ConnectionSettings), "AdditionalAttributes" :: NullOrUndefined (AdditionalAttributes) } -> { "CrossZoneLoadBalancing" :: NullOrUndefined (CrossZoneLoadBalancing), "AccessLog" :: NullOrUndefined (AccessLog), "ConnectionDraining" :: NullOrUndefined (ConnectionDraining), "ConnectionSettings" :: NullOrUndefined (ConnectionSettings), "AdditionalAttributes" :: NullOrUndefined (AdditionalAttributes) }) -> LoadBalancerAttributes
+newLoadBalancerAttributes' :: ({ "CrossZoneLoadBalancing" :: Maybe (CrossZoneLoadBalancing), "AccessLog" :: Maybe (AccessLog), "ConnectionDraining" :: Maybe (ConnectionDraining), "ConnectionSettings" :: Maybe (ConnectionSettings), "AdditionalAttributes" :: Maybe (AdditionalAttributes) } -> { "CrossZoneLoadBalancing" :: Maybe (CrossZoneLoadBalancing), "AccessLog" :: Maybe (AccessLog), "ConnectionDraining" :: Maybe (ConnectionDraining), "ConnectionSettings" :: Maybe (ConnectionSettings), "AdditionalAttributes" :: Maybe (AdditionalAttributes) }) -> LoadBalancerAttributes
 ```
 
 Constructs LoadBalancerAttributes's fields from required parameters
@@ -2758,7 +2758,7 @@ Constructs LoadBalancerAttributes's fields from required parameters
 
 ``` purescript
 newtype LoadBalancerDescription
-  = LoadBalancerDescription { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "DNSName" :: NullOrUndefined (DNSName), "CanonicalHostedZoneName" :: NullOrUndefined (DNSName), "CanonicalHostedZoneNameID" :: NullOrUndefined (DNSName), "ListenerDescriptions" :: NullOrUndefined (ListenerDescriptions), "Policies" :: NullOrUndefined (Policies), "BackendServerDescriptions" :: NullOrUndefined (BackendServerDescriptions), "AvailabilityZones" :: NullOrUndefined (AvailabilityZones), "Subnets" :: NullOrUndefined (Subnets), "VPCId" :: NullOrUndefined (VPCId), "Instances" :: NullOrUndefined (Instances), "HealthCheck" :: NullOrUndefined (HealthCheck), "SourceSecurityGroup" :: NullOrUndefined (SourceSecurityGroup), "SecurityGroups" :: NullOrUndefined (SecurityGroups), "CreatedTime" :: NullOrUndefined (CreatedTime), "Scheme" :: NullOrUndefined (LoadBalancerScheme) }
+  = LoadBalancerDescription { "LoadBalancerName" :: Maybe (AccessPointName), "DNSName" :: Maybe (DNSName), "CanonicalHostedZoneName" :: Maybe (DNSName), "CanonicalHostedZoneNameID" :: Maybe (DNSName), "ListenerDescriptions" :: Maybe (ListenerDescriptions), "Policies" :: Maybe (Policies), "BackendServerDescriptions" :: Maybe (BackendServerDescriptions), "AvailabilityZones" :: Maybe (AvailabilityZones), "Subnets" :: Maybe (Subnets), "VPCId" :: Maybe (VPCId), "Instances" :: Maybe (Instances), "HealthCheck" :: Maybe (HealthCheck), "SourceSecurityGroup" :: Maybe (SourceSecurityGroup), "SecurityGroups" :: Maybe (SecurityGroups), "CreatedTime" :: Maybe (CreatedTime), "Scheme" :: Maybe (LoadBalancerScheme) }
 ```
 
 <p>Information about a load balancer.</p>
@@ -2783,7 +2783,7 @@ Constructs LoadBalancerDescription from required parameters
 #### `newLoadBalancerDescription'`
 
 ``` purescript
-newLoadBalancerDescription' :: ({ "LoadBalancerName" :: NullOrUndefined (AccessPointName), "DNSName" :: NullOrUndefined (DNSName), "CanonicalHostedZoneName" :: NullOrUndefined (DNSName), "CanonicalHostedZoneNameID" :: NullOrUndefined (DNSName), "ListenerDescriptions" :: NullOrUndefined (ListenerDescriptions), "Policies" :: NullOrUndefined (Policies), "BackendServerDescriptions" :: NullOrUndefined (BackendServerDescriptions), "AvailabilityZones" :: NullOrUndefined (AvailabilityZones), "Subnets" :: NullOrUndefined (Subnets), "VPCId" :: NullOrUndefined (VPCId), "Instances" :: NullOrUndefined (Instances), "HealthCheck" :: NullOrUndefined (HealthCheck), "SourceSecurityGroup" :: NullOrUndefined (SourceSecurityGroup), "SecurityGroups" :: NullOrUndefined (SecurityGroups), "CreatedTime" :: NullOrUndefined (CreatedTime), "Scheme" :: NullOrUndefined (LoadBalancerScheme) } -> { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "DNSName" :: NullOrUndefined (DNSName), "CanonicalHostedZoneName" :: NullOrUndefined (DNSName), "CanonicalHostedZoneNameID" :: NullOrUndefined (DNSName), "ListenerDescriptions" :: NullOrUndefined (ListenerDescriptions), "Policies" :: NullOrUndefined (Policies), "BackendServerDescriptions" :: NullOrUndefined (BackendServerDescriptions), "AvailabilityZones" :: NullOrUndefined (AvailabilityZones), "Subnets" :: NullOrUndefined (Subnets), "VPCId" :: NullOrUndefined (VPCId), "Instances" :: NullOrUndefined (Instances), "HealthCheck" :: NullOrUndefined (HealthCheck), "SourceSecurityGroup" :: NullOrUndefined (SourceSecurityGroup), "SecurityGroups" :: NullOrUndefined (SecurityGroups), "CreatedTime" :: NullOrUndefined (CreatedTime), "Scheme" :: NullOrUndefined (LoadBalancerScheme) }) -> LoadBalancerDescription
+newLoadBalancerDescription' :: ({ "LoadBalancerName" :: Maybe (AccessPointName), "DNSName" :: Maybe (DNSName), "CanonicalHostedZoneName" :: Maybe (DNSName), "CanonicalHostedZoneNameID" :: Maybe (DNSName), "ListenerDescriptions" :: Maybe (ListenerDescriptions), "Policies" :: Maybe (Policies), "BackendServerDescriptions" :: Maybe (BackendServerDescriptions), "AvailabilityZones" :: Maybe (AvailabilityZones), "Subnets" :: Maybe (Subnets), "VPCId" :: Maybe (VPCId), "Instances" :: Maybe (Instances), "HealthCheck" :: Maybe (HealthCheck), "SourceSecurityGroup" :: Maybe (SourceSecurityGroup), "SecurityGroups" :: Maybe (SecurityGroups), "CreatedTime" :: Maybe (CreatedTime), "Scheme" :: Maybe (LoadBalancerScheme) } -> { "LoadBalancerName" :: Maybe (AccessPointName), "DNSName" :: Maybe (DNSName), "CanonicalHostedZoneName" :: Maybe (DNSName), "CanonicalHostedZoneNameID" :: Maybe (DNSName), "ListenerDescriptions" :: Maybe (ListenerDescriptions), "Policies" :: Maybe (Policies), "BackendServerDescriptions" :: Maybe (BackendServerDescriptions), "AvailabilityZones" :: Maybe (AvailabilityZones), "Subnets" :: Maybe (Subnets), "VPCId" :: Maybe (VPCId), "Instances" :: Maybe (Instances), "HealthCheck" :: Maybe (HealthCheck), "SourceSecurityGroup" :: Maybe (SourceSecurityGroup), "SecurityGroups" :: Maybe (SecurityGroups), "CreatedTime" :: Maybe (CreatedTime), "Scheme" :: Maybe (LoadBalancerScheme) }) -> LoadBalancerDescription
 ```
 
 Constructs LoadBalancerDescription's fields from required parameters
@@ -2922,7 +2922,7 @@ Constructs ModifyLoadBalancerAttributesInput's fields from required parameters
 
 ``` purescript
 newtype ModifyLoadBalancerAttributesOutput
-  = ModifyLoadBalancerAttributesOutput { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "LoadBalancerAttributes" :: NullOrUndefined (LoadBalancerAttributes) }
+  = ModifyLoadBalancerAttributesOutput { "LoadBalancerName" :: Maybe (AccessPointName), "LoadBalancerAttributes" :: Maybe (LoadBalancerAttributes) }
 ```
 
 <p>Contains the output of ModifyLoadBalancerAttributes.</p>
@@ -2947,7 +2947,7 @@ Constructs ModifyLoadBalancerAttributesOutput from required parameters
 #### `newModifyLoadBalancerAttributesOutput'`
 
 ``` purescript
-newModifyLoadBalancerAttributesOutput' :: ({ "LoadBalancerName" :: NullOrUndefined (AccessPointName), "LoadBalancerAttributes" :: NullOrUndefined (LoadBalancerAttributes) } -> { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "LoadBalancerAttributes" :: NullOrUndefined (LoadBalancerAttributes) }) -> ModifyLoadBalancerAttributesOutput
+newModifyLoadBalancerAttributesOutput' :: ({ "LoadBalancerName" :: Maybe (AccessPointName), "LoadBalancerAttributes" :: Maybe (LoadBalancerAttributes) } -> { "LoadBalancerName" :: Maybe (AccessPointName), "LoadBalancerAttributes" :: Maybe (LoadBalancerAttributes) }) -> ModifyLoadBalancerAttributesOutput
 ```
 
 Constructs ModifyLoadBalancerAttributesOutput's fields from required parameters
@@ -3006,7 +3006,7 @@ Encode PageSize
 
 ``` purescript
 newtype Policies
-  = Policies { "AppCookieStickinessPolicies" :: NullOrUndefined (AppCookieStickinessPolicies), "LBCookieStickinessPolicies" :: NullOrUndefined (LBCookieStickinessPolicies), "OtherPolicies" :: NullOrUndefined (PolicyNames) }
+  = Policies { "AppCookieStickinessPolicies" :: Maybe (AppCookieStickinessPolicies), "LBCookieStickinessPolicies" :: Maybe (LBCookieStickinessPolicies), "OtherPolicies" :: Maybe (PolicyNames) }
 ```
 
 <p>The policies for a load balancer.</p>
@@ -3031,7 +3031,7 @@ Constructs Policies from required parameters
 #### `newPolicies'`
 
 ``` purescript
-newPolicies' :: ({ "AppCookieStickinessPolicies" :: NullOrUndefined (AppCookieStickinessPolicies), "LBCookieStickinessPolicies" :: NullOrUndefined (LBCookieStickinessPolicies), "OtherPolicies" :: NullOrUndefined (PolicyNames) } -> { "AppCookieStickinessPolicies" :: NullOrUndefined (AppCookieStickinessPolicies), "LBCookieStickinessPolicies" :: NullOrUndefined (LBCookieStickinessPolicies), "OtherPolicies" :: NullOrUndefined (PolicyNames) }) -> Policies
+newPolicies' :: ({ "AppCookieStickinessPolicies" :: Maybe (AppCookieStickinessPolicies), "LBCookieStickinessPolicies" :: Maybe (LBCookieStickinessPolicies), "OtherPolicies" :: Maybe (PolicyNames) } -> { "AppCookieStickinessPolicies" :: Maybe (AppCookieStickinessPolicies), "LBCookieStickinessPolicies" :: Maybe (LBCookieStickinessPolicies), "OtherPolicies" :: Maybe (PolicyNames) }) -> Policies
 ```
 
 Constructs Policies's fields from required parameters
@@ -3040,7 +3040,7 @@ Constructs Policies's fields from required parameters
 
 ``` purescript
 newtype PolicyAttribute
-  = PolicyAttribute { "AttributeName" :: NullOrUndefined (AttributeName), "AttributeValue" :: NullOrUndefined (AttributeValue) }
+  = PolicyAttribute { "AttributeName" :: Maybe (AttributeName), "AttributeValue" :: Maybe (AttributeValue) }
 ```
 
 <p>Information about a policy attribute.</p>
@@ -3065,7 +3065,7 @@ Constructs PolicyAttribute from required parameters
 #### `newPolicyAttribute'`
 
 ``` purescript
-newPolicyAttribute' :: ({ "AttributeName" :: NullOrUndefined (AttributeName), "AttributeValue" :: NullOrUndefined (AttributeValue) } -> { "AttributeName" :: NullOrUndefined (AttributeName), "AttributeValue" :: NullOrUndefined (AttributeValue) }) -> PolicyAttribute
+newPolicyAttribute' :: ({ "AttributeName" :: Maybe (AttributeName), "AttributeValue" :: Maybe (AttributeValue) } -> { "AttributeName" :: Maybe (AttributeName), "AttributeValue" :: Maybe (AttributeValue) }) -> PolicyAttribute
 ```
 
 Constructs PolicyAttribute's fields from required parameters
@@ -3074,7 +3074,7 @@ Constructs PolicyAttribute's fields from required parameters
 
 ``` purescript
 newtype PolicyAttributeDescription
-  = PolicyAttributeDescription { "AttributeName" :: NullOrUndefined (AttributeName), "AttributeValue" :: NullOrUndefined (AttributeValue) }
+  = PolicyAttributeDescription { "AttributeName" :: Maybe (AttributeName), "AttributeValue" :: Maybe (AttributeValue) }
 ```
 
 <p>Information about a policy attribute.</p>
@@ -3099,7 +3099,7 @@ Constructs PolicyAttributeDescription from required parameters
 #### `newPolicyAttributeDescription'`
 
 ``` purescript
-newPolicyAttributeDescription' :: ({ "AttributeName" :: NullOrUndefined (AttributeName), "AttributeValue" :: NullOrUndefined (AttributeValue) } -> { "AttributeName" :: NullOrUndefined (AttributeName), "AttributeValue" :: NullOrUndefined (AttributeValue) }) -> PolicyAttributeDescription
+newPolicyAttributeDescription' :: ({ "AttributeName" :: Maybe (AttributeName), "AttributeValue" :: Maybe (AttributeValue) } -> { "AttributeName" :: Maybe (AttributeName), "AttributeValue" :: Maybe (AttributeValue) }) -> PolicyAttributeDescription
 ```
 
 Constructs PolicyAttributeDescription's fields from required parameters
@@ -3124,7 +3124,7 @@ Encode PolicyAttributeDescriptions
 
 ``` purescript
 newtype PolicyAttributeTypeDescription
-  = PolicyAttributeTypeDescription { "AttributeName" :: NullOrUndefined (AttributeName), "AttributeType" :: NullOrUndefined (AttributeType), "Description" :: NullOrUndefined (Description), "DefaultValue" :: NullOrUndefined (DefaultValue), "Cardinality" :: NullOrUndefined (Cardinality) }
+  = PolicyAttributeTypeDescription { "AttributeName" :: Maybe (AttributeName), "AttributeType" :: Maybe (AttributeType), "Description" :: Maybe (Description), "DefaultValue" :: Maybe (DefaultValue), "Cardinality" :: Maybe (Cardinality) }
 ```
 
 <p>Information about a policy attribute type.</p>
@@ -3149,7 +3149,7 @@ Constructs PolicyAttributeTypeDescription from required parameters
 #### `newPolicyAttributeTypeDescription'`
 
 ``` purescript
-newPolicyAttributeTypeDescription' :: ({ "AttributeName" :: NullOrUndefined (AttributeName), "AttributeType" :: NullOrUndefined (AttributeType), "Description" :: NullOrUndefined (Description), "DefaultValue" :: NullOrUndefined (DefaultValue), "Cardinality" :: NullOrUndefined (Cardinality) } -> { "AttributeName" :: NullOrUndefined (AttributeName), "AttributeType" :: NullOrUndefined (AttributeType), "Description" :: NullOrUndefined (Description), "DefaultValue" :: NullOrUndefined (DefaultValue), "Cardinality" :: NullOrUndefined (Cardinality) }) -> PolicyAttributeTypeDescription
+newPolicyAttributeTypeDescription' :: ({ "AttributeName" :: Maybe (AttributeName), "AttributeType" :: Maybe (AttributeType), "Description" :: Maybe (Description), "DefaultValue" :: Maybe (DefaultValue), "Cardinality" :: Maybe (Cardinality) } -> { "AttributeName" :: Maybe (AttributeName), "AttributeType" :: Maybe (AttributeType), "Description" :: Maybe (Description), "DefaultValue" :: Maybe (DefaultValue), "Cardinality" :: Maybe (Cardinality) }) -> PolicyAttributeTypeDescription
 ```
 
 Constructs PolicyAttributeTypeDescription's fields from required parameters
@@ -3190,7 +3190,7 @@ Encode PolicyAttributes
 
 ``` purescript
 newtype PolicyDescription
-  = PolicyDescription { "PolicyName" :: NullOrUndefined (PolicyName), "PolicyTypeName" :: NullOrUndefined (PolicyTypeName), "PolicyAttributeDescriptions" :: NullOrUndefined (PolicyAttributeDescriptions) }
+  = PolicyDescription { "PolicyName" :: Maybe (PolicyName), "PolicyTypeName" :: Maybe (PolicyTypeName), "PolicyAttributeDescriptions" :: Maybe (PolicyAttributeDescriptions) }
 ```
 
 <p>Information about a policy.</p>
@@ -3215,7 +3215,7 @@ Constructs PolicyDescription from required parameters
 #### `newPolicyDescription'`
 
 ``` purescript
-newPolicyDescription' :: ({ "PolicyName" :: NullOrUndefined (PolicyName), "PolicyTypeName" :: NullOrUndefined (PolicyTypeName), "PolicyAttributeDescriptions" :: NullOrUndefined (PolicyAttributeDescriptions) } -> { "PolicyName" :: NullOrUndefined (PolicyName), "PolicyTypeName" :: NullOrUndefined (PolicyTypeName), "PolicyAttributeDescriptions" :: NullOrUndefined (PolicyAttributeDescriptions) }) -> PolicyDescription
+newPolicyDescription' :: ({ "PolicyName" :: Maybe (PolicyName), "PolicyTypeName" :: Maybe (PolicyTypeName), "PolicyAttributeDescriptions" :: Maybe (PolicyAttributeDescriptions) } -> { "PolicyName" :: Maybe (PolicyName), "PolicyTypeName" :: Maybe (PolicyTypeName), "PolicyAttributeDescriptions" :: Maybe (PolicyAttributeDescriptions) }) -> PolicyDescription
 ```
 
 Constructs PolicyDescription's fields from required parameters
@@ -3290,7 +3290,7 @@ Encode PolicyNotFoundException
 
 ``` purescript
 newtype PolicyTypeDescription
-  = PolicyTypeDescription { "PolicyTypeName" :: NullOrUndefined (PolicyTypeName), "Description" :: NullOrUndefined (Description), "PolicyAttributeTypeDescriptions" :: NullOrUndefined (PolicyAttributeTypeDescriptions) }
+  = PolicyTypeDescription { "PolicyTypeName" :: Maybe (PolicyTypeName), "Description" :: Maybe (Description), "PolicyAttributeTypeDescriptions" :: Maybe (PolicyAttributeTypeDescriptions) }
 ```
 
 <p>Information about a policy type.</p>
@@ -3315,7 +3315,7 @@ Constructs PolicyTypeDescription from required parameters
 #### `newPolicyTypeDescription'`
 
 ``` purescript
-newPolicyTypeDescription' :: ({ "PolicyTypeName" :: NullOrUndefined (PolicyTypeName), "Description" :: NullOrUndefined (Description), "PolicyAttributeTypeDescriptions" :: NullOrUndefined (PolicyAttributeTypeDescriptions) } -> { "PolicyTypeName" :: NullOrUndefined (PolicyTypeName), "Description" :: NullOrUndefined (Description), "PolicyAttributeTypeDescriptions" :: NullOrUndefined (PolicyAttributeTypeDescriptions) }) -> PolicyTypeDescription
+newPolicyTypeDescription' :: ({ "PolicyTypeName" :: Maybe (PolicyTypeName), "Description" :: Maybe (Description), "PolicyAttributeTypeDescriptions" :: Maybe (PolicyAttributeTypeDescriptions) } -> { "PolicyTypeName" :: Maybe (PolicyTypeName), "Description" :: Maybe (Description), "PolicyAttributeTypeDescriptions" :: Maybe (PolicyAttributeTypeDescriptions) }) -> PolicyTypeDescription
 ```
 
 Constructs PolicyTypeDescription's fields from required parameters
@@ -3472,7 +3472,7 @@ Constructs RegisterEndPointsInput's fields from required parameters
 
 ``` purescript
 newtype RegisterEndPointsOutput
-  = RegisterEndPointsOutput { "Instances" :: NullOrUndefined (Instances) }
+  = RegisterEndPointsOutput { "Instances" :: Maybe (Instances) }
 ```
 
 <p>Contains the output of RegisterInstancesWithLoadBalancer.</p>
@@ -3497,7 +3497,7 @@ Constructs RegisterEndPointsOutput from required parameters
 #### `newRegisterEndPointsOutput'`
 
 ``` purescript
-newRegisterEndPointsOutput' :: ({ "Instances" :: NullOrUndefined (Instances) } -> { "Instances" :: NullOrUndefined (Instances) }) -> RegisterEndPointsOutput
+newRegisterEndPointsOutput' :: ({ "Instances" :: Maybe (Instances) } -> { "Instances" :: Maybe (Instances) }) -> RegisterEndPointsOutput
 ```
 
 Constructs RegisterEndPointsOutput's fields from required parameters
@@ -3540,7 +3540,7 @@ Constructs RemoveAvailabilityZonesInput's fields from required parameters
 
 ``` purescript
 newtype RemoveAvailabilityZonesOutput
-  = RemoveAvailabilityZonesOutput { "AvailabilityZones" :: NullOrUndefined (AvailabilityZones) }
+  = RemoveAvailabilityZonesOutput { "AvailabilityZones" :: Maybe (AvailabilityZones) }
 ```
 
 <p>Contains the output for DisableAvailabilityZonesForLoadBalancer.</p>
@@ -3565,7 +3565,7 @@ Constructs RemoveAvailabilityZonesOutput from required parameters
 #### `newRemoveAvailabilityZonesOutput'`
 
 ``` purescript
-newRemoveAvailabilityZonesOutput' :: ({ "AvailabilityZones" :: NullOrUndefined (AvailabilityZones) } -> { "AvailabilityZones" :: NullOrUndefined (AvailabilityZones) }) -> RemoveAvailabilityZonesOutput
+newRemoveAvailabilityZonesOutput' :: ({ "AvailabilityZones" :: Maybe (AvailabilityZones) } -> { "AvailabilityZones" :: Maybe (AvailabilityZones) }) -> RemoveAvailabilityZonesOutput
 ```
 
 Constructs RemoveAvailabilityZonesOutput's fields from required parameters
@@ -3878,7 +3878,7 @@ Encode SetLoadBalancerPoliciesOfListenerOutput
 
 ``` purescript
 newtype SourceSecurityGroup
-  = SourceSecurityGroup { "OwnerAlias" :: NullOrUndefined (SecurityGroupOwnerAlias), "GroupName" :: NullOrUndefined (SecurityGroupName) }
+  = SourceSecurityGroup { "OwnerAlias" :: Maybe (SecurityGroupOwnerAlias), "GroupName" :: Maybe (SecurityGroupName) }
 ```
 
 <p>Information about a source security group.</p>
@@ -3903,7 +3903,7 @@ Constructs SourceSecurityGroup from required parameters
 #### `newSourceSecurityGroup'`
 
 ``` purescript
-newSourceSecurityGroup' :: ({ "OwnerAlias" :: NullOrUndefined (SecurityGroupOwnerAlias), "GroupName" :: NullOrUndefined (SecurityGroupName) } -> { "OwnerAlias" :: NullOrUndefined (SecurityGroupOwnerAlias), "GroupName" :: NullOrUndefined (SecurityGroupName) }) -> SourceSecurityGroup
+newSourceSecurityGroup' :: ({ "OwnerAlias" :: Maybe (SecurityGroupOwnerAlias), "GroupName" :: Maybe (SecurityGroupName) } -> { "OwnerAlias" :: Maybe (SecurityGroupOwnerAlias), "GroupName" :: Maybe (SecurityGroupName) }) -> SourceSecurityGroup
 ```
 
 Constructs SourceSecurityGroup's fields from required parameters
@@ -3978,7 +3978,7 @@ Encode Subnets
 
 ``` purescript
 newtype Tag
-  = Tag { "Key" :: TagKey, "Value" :: NullOrUndefined (TagValue) }
+  = Tag { "Key" :: TagKey, "Value" :: Maybe (TagValue) }
 ```
 
 <p>Information about a tag.</p>
@@ -4003,7 +4003,7 @@ Constructs Tag from required parameters
 #### `newTag'`
 
 ``` purescript
-newTag' :: TagKey -> ({ "Key" :: TagKey, "Value" :: NullOrUndefined (TagValue) } -> { "Key" :: TagKey, "Value" :: NullOrUndefined (TagValue) }) -> Tag
+newTag' :: TagKey -> ({ "Key" :: TagKey, "Value" :: Maybe (TagValue) } -> { "Key" :: TagKey, "Value" :: Maybe (TagValue) }) -> Tag
 ```
 
 Constructs Tag's fields from required parameters
@@ -4012,7 +4012,7 @@ Constructs Tag's fields from required parameters
 
 ``` purescript
 newtype TagDescription
-  = TagDescription { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "Tags" :: NullOrUndefined (TagList) }
+  = TagDescription { "LoadBalancerName" :: Maybe (AccessPointName), "Tags" :: Maybe (TagList) }
 ```
 
 <p>The tags associated with a load balancer.</p>
@@ -4037,7 +4037,7 @@ Constructs TagDescription from required parameters
 #### `newTagDescription'`
 
 ``` purescript
-newTagDescription' :: ({ "LoadBalancerName" :: NullOrUndefined (AccessPointName), "Tags" :: NullOrUndefined (TagList) } -> { "LoadBalancerName" :: NullOrUndefined (AccessPointName), "Tags" :: NullOrUndefined (TagList) }) -> TagDescription
+newTagDescription' :: ({ "LoadBalancerName" :: Maybe (AccessPointName), "Tags" :: Maybe (TagList) } -> { "LoadBalancerName" :: Maybe (AccessPointName), "Tags" :: Maybe (TagList) }) -> TagDescription
 ```
 
 Constructs TagDescription's fields from required parameters
@@ -4094,7 +4094,7 @@ Encode TagKeyList
 
 ``` purescript
 newtype TagKeyOnly
-  = TagKeyOnly { "Key" :: NullOrUndefined (TagKey) }
+  = TagKeyOnly { "Key" :: Maybe (TagKey) }
 ```
 
 <p>The key of a tag.</p>
@@ -4119,7 +4119,7 @@ Constructs TagKeyOnly from required parameters
 #### `newTagKeyOnly'`
 
 ``` purescript
-newTagKeyOnly' :: ({ "Key" :: NullOrUndefined (TagKey) } -> { "Key" :: NullOrUndefined (TagKey) }) -> TagKeyOnly
+newTagKeyOnly' :: ({ "Key" :: Maybe (TagKey) } -> { "Key" :: Maybe (TagKey) }) -> TagKeyOnly
 ```
 
 Constructs TagKeyOnly's fields from required parameters
